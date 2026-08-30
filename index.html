@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="I am a passionate web developer with experience in creating responsive and user-friendly websites. I specialize in HTML, CSS, and JavaScript, and I am always eager to learn new technologies and improve my skills."
+    />
+
+    <title>Haleem Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="portfolio/style.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <!--===== NAVIGATION =====-->
+    <nav class="navbar">
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="index.html">Home</a>
+    </nav>
+    <!--===== PAGE TITLE =====-->
+    <h1 id="page-title">My Portfolio</h1>
+
+    <!--===== HEADER =====-->
+    <header>
+      <!-- Hire Me Dialog -->
+      <dialog id="hire-me-dialog">
+        <h2>Let's Work Together</h2>
+
+        <p>
+          Email me at
+          <a href="mailto:olaniranhaleem@gmail.com">
+            olaniranhaleem@gmail.com
+          </a>
+        </p>
+
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+      </dialog>
+
+      <button
+        type="button"
+        onclick="document.getElementById('hire-me-dialog').showModal()"
+      >
+        Hire Me
+      </button>
+
+      <!--===== LOGO =====-->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="200"
+        height="200"
+        viewBox="0 0 200 200"
+      >
+        <circle
+          cx="100"
+          cy="100"
+          r="90"
+          fill="none"
+          stroke="black"
+          stroke-width="6"
+          style="fill: rgb(14, 122, 254)"
+        />
+
+        <text
+          x="100"
+          y="120"
+          text-anchor="middle"
+          font-family="Arial, sans-serif"
+          font-size="70"
+          font-weight="bold"
+          fill="black"
+        >
+          HO
+        </text>
+      </svg>
+
+      <br />
+      <br />
+
+      <h1>OLANIRAN HALEEM</h1>
+
+      <h2 class="section-heading">WEB DEVELOPER</h2>
+
+      <p>
+        I am a passionate web developer with experience in creating responsive
+        and user-friendly websites. I specialize in HTML, CSS, and JavaScript,
+        and I am always eager to learn new technologies and improve my skills.
+      </p>
+
+      <br />
+      <br />
+    </header>
+
+    <br />
+    <br />
+
+    <!--===== FEATURED WORK =====-->
+    <section class="featured-work">
+      <h2 class="section-heading">FEATURED WORK</h2>
+
+      <p>
+        I have worked on several projects, including personal websites and web
+        applications. Here are some of my featured works:
+      </p>
+
+      <div class="project-container">
+        <!--===== PROJECT CARD 1 =====-->
+        <article class="project-card project-card--featured">
+          <img src="profile.jpg" alt="Brain Byte project" />
+
+          <h3 class="project-card__title">
+            Brain Byte
+            <span class="project-card__badge">Featured</span>
+          </h3>
+
+          <p class="project-card__description">
+            A web application designed to help students learn and organize their
+            study materials.
+          </p>
+
+          <p>HTML • CSS • JavaScript</p>
+
+          <a
+            href="https://shiro25-web.github.io/Brain_byte/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
+        </article>
+
+        <!--===== PROJECT CARD 2 =====-->
+        <article class="project-card">
+          <img src="profile.jpg" alt="Brain Byte project" />
+
+          <h3 class="project-card__title">
+            Brain Byte
+            <span class="project-card__badge">Featured</span>
+          </h3>
+
+          <p class="project-card__description">
+            A web application designed to help students learn and organize their
+            study materials.
+          </p>
+
+          <p>HTML • CSS • JavaScript</p>
+
+          <a
+            href="https://shiro25-web.github.io/Brain_byte/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <br />
+    <br />
+
+    <!--===== PROFILE IMAGE =====-->
+    <img
+      src="IMG-20260724-WA0008.jpg"
+      alt="My profile picture"
+      width="300"
+      height="400"
+    />
+
+    <br />
+    <br />
+
+    <!--===== ABOUT ME =====-->
+    <h2 class="section-heading">ABOUT ME</h2>
+
+    <p>
+      I am a passionate web developer with experience in creating responsive and
+      user-friendly websites.
+    </p>
+
+    <p>
+      I specialize in HTML, CSS, and JavaScript, and I am always eager to learn
+      new technologies and improve my skills.
+    </p>
+
+    <p>A student of Al-Hikmah University</p>
+
+    <!--===== VIDEO =====-->
+    <iframe
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+      "
+      allowfullscreen
+    ></iframe>
+
+    <!--===== SKILLS =====-->
+    <h2 class="section-heading">Skills</h2>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JAVASCRIPT</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <!--===== FOOTER =====-->
+    <footer>
+      <p>&copy; 2026 Haleem Olaniran. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

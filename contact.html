@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Contact Haleem, a passionate web developer specializing in HTML, CSS, and JavaScript."
+    />
+
+    <title>Contact Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="portfolio/style.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <!--===== NAVIGATION =====-->
+    <nav class="navbar">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+
+    <!--===== HEADER =====-->
+    <header>
+      <!-- Logo -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="200"
+        height="200"
+        viewBox="0 0 200 200"
+      >
+        <circle
+          cx="100"
+          cy="100"
+          r="90"
+          fill="none"
+          stroke="black"
+          stroke-width="6"
+          style="fill: #0e7afe"
+        />
+
+        <text
+          x="100"
+          y="120"
+          text-anchor="middle"
+          font-family="Arial, sans-serif"
+          font-size="70"
+          font-weight="bold"
+          fill="black"
+        >
+          HO
+        </text>
+      </svg>
+
+      <h2 class="section-heading">Contact Me</h2>
+    </header>
+
+    <br />
+    <br />
+
+    <!--===== CONTACT FORM =====-->
+    <form action="submit.php" method="post">
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <span aria-hidden="true">*</span>
+
+      <br />
+      <br />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <span aria-hidden="true">*</span>
+
+      <br />
+      <br />
+
+      <!-- Reason for contact -->
+      <label for="reason-for-contact">Reason for contact:</label>
+
+      <select id="reason-for-contact" name="reason_for_contact" required>
+        <option value="">Select a reason</option>
+        <option value="job">Job opportunity</option>
+        <option value="collaboration">Collaboration</option>
+        <option value="general">Just saying hi</option>
+      </select>
+
+      <span aria-hidden="true">*</span>
+
+      <br />
+      <br />
+
+      <!-- Preferred contact method -->
+      <fieldset>
+        <legend>
+          <b>Preferred contact method</b>
+        </legend>
+
+        <br />
+
+        <input type="radio" name="contact" id="contact-email" value="email" />
+        <label for="contact-email">Email</label>
+
+        <input type="radio" name="contact" id="contact-phone" value="phone" />
+        <label for="contact-phone">Phone</label>
+      </fieldset>
+
+      <br />
+      <br />
+
+      <!-- Message -->
+      <label for="message">Your message:</label>
+
+      <textarea id="message" name="message" required minlength="20"></textarea>
+
+      <span aria-hidden="true">*</span>
+
+      <br />
+      <br />
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <br />
+    <br />
+
+    <!--===== LOCATION =====-->
+    <section id="location">
+      <h2 class="section-heading">My City</h2>
+
+      <a href="about.html">About Me</a>
+
+      <br />
+      <br />
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253228.94234837702!2d3.740243459315469!3d7.3872277432094995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d77eeff086f%3A0x3b33e0f76e8e04a9!2sIbadan%2C%20Oyo!5e0!3m2!1sen!2sng!4v1786445282288!5m2!1sen!2sng"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="Map showing my city"
+      ></iframe>
+    </section>
+
+    <!--===== FOOTER =====-->
+    <footer>
+      <p>&copy; 2026 Haleem Olaniran. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
