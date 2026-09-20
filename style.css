@@ -2073,3 +2073,39 @@ fieldset:focus-within {
     max-width: 240px;
   }
 }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.nav-links--open {
+    display: flex;
+  }
+}
+
+#error-message {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.error-message--error {
+  color: #e53e3e;
+}
+
+.error-message--success {
+  color: #38a169;
+}

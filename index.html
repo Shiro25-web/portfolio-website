@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Haleem Olaniran is a passionate web developer specializing in HTML, CSS, and JavaScript."
+    />
+
+    <title>Haleem Portfolio | Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="portfolio/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+      <a class="nav-logo" href="index.html">HO</a>
+
+      <button
+        class="nav-toggle"
+        aria-label="toggle navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <div class="nav-links">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="home-page">
+      <!-- ================= HERO ================= -->
+
+      <section class="home-hero">
+        <!-- Logo -->
+
+        <div class="hero-logo home-logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 200 200"
+            aria-label="HO logo"
+            role="img"
+          >
+            <circle
+              cx="100"
+              cy="100"
+              r="88"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="5"
+            />
+
+            <text
+              x="100"
+              y="122"
+              text-anchor="middle"
+              font-family="Arial, sans-serif"
+              font-size="65"
+              font-weight="700"
+              fill="currentColor"
+            >
+              HO
+            </text>
+          </svg>
+        </div>
+
+        <p class="contact-label">WELCOME TO MY PORTFOLIO</p>
+
+        <h1 class="home-title">
+          OLANIRAN
+          <span>HALEEM</span>
+        </h1>
+
+        <h2 class="home-role">WEB DEVELOPER</h2>
+
+        <p class="home-intro">
+          I build responsive, user-friendly websites with clean designs and
+          modern web technologies.
+        </p>
+
+        <!-- Hero buttons -->
+
+        <div class="hero-buttons">
+          <button
+            type="button"
+            class="submit-button hero-button"
+            onclick="document.getElementById('hire-me-dialog').showModal()"
+          >
+            <span>Hire Me</span>
+            <span class="button-arrow">→</span>
+          </button>
+
+          <a href="#featured-work" class="outline-button">
+            View My Work
+            <span>↓</span>
+          </a>
+        </div>
+
+        <!-- Hire Me Dialog -->
+
+        <dialog id="hire-me-dialog">
+          <div class="dialog-content">
+            <button
+              type="button"
+              class="dialog-close"
+              onclick="document.getElementById('hire-me-dialog').close()"
+              aria-label="Close dialog"
+            >
+              ×
+            </button>
+
+            <p class="small-heading">LET'S WORK TOGETHER</p>
+
+            <h2>Have a project in mind?</h2>
+
+            <p>
+              I'm always open to discussing new projects, collaborations, and
+              opportunities.
+            </p>
+
+            <a
+              href="mailto:olaniranhaleem@gmail.com"
+              class="submit-button dialog-email"
+            >
+              <span>Email Me</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </dialog>
+      </section>
+
+      <!-- ================= FEATURED WORK ================= -->
+
+      <section class="featured-work" id="featured-work">
+        <div class="section-top">
+          <div>
+            <p class="small-heading">MY PROJECTS</p>
+
+            <h2 class="large-section-title">Featured Work</h2>
+          </div>
+
+          <p class="section-description">
+            A collection of projects I've built while learning and developing my
+            skills.
+          </p>
+        </div>
+
+        <!-- Project cards are inserted here by script.js -->
+
+        <div class="project-container"></div>
+      </section>
+
+      <!-- ================= ABOUT PREVIEW ================= -->
+
+      <section class="about-preview">
+        <div class="about-image-container">
+          <img
+            src="IMG-20260724-WA0008.jpg"
+            alt="Portrait of Haleem Olaniran"
+            class="profile-image"
+            width="300"
+            height="400"
+          />
+        </div>
+
+        <div class="about-preview-content">
+          <p class="small-heading">A LITTLE ABOUT ME</p>
+
+          <h2 class="large-section-title">
+            Building. Learning.
+            <span>Growing.</span>
+          </h2>
+
+          <p>
+            I am a computer science student at Al-Hikmah University and a
+            passionate web developer.
+          </p>
+
+          <p>
+            I enjoy creating responsive and user-friendly websites while
+            continuously learning new technologies and improving my skills.
+          </p>
+
+          <a href="about.html" class="location-link"> More About Me → </a>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+
+      <section class="skills-section">
+        <div class="section-top">
+          <div>
+            <p class="small-heading">WHAT I USE</p>
+
+            <h2 class="large-section-title">My Skills</h2>
+          </div>
+
+          <p class="section-description">
+            Technologies I'm currently learning and working with.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-number"> 01 </span>
+
+            <h3>HTML</h3>
+
+            <p>Building structured and accessible web pages.</p>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-number"> 02 </span>
+
+            <h3>CSS</h3>
+
+            <p>
+              Creating responsive layouts, animations, and modern interfaces.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-number"> 03 </span>
+
+            <h3>JavaScript</h3>
+
+            <p>Adding interaction and functionality to websites.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= VIDEO ================= -->
+
+      <section class="video-section">
+        <div class="section-top">
+          <div>
+            <p class="small-heading">WATCH</p>
+
+            <h2 class="large-section-title">Something I Enjoy</h2>
+          </div>
+        </div>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="YouTube video player"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Haleem Olaniran. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="portfolio/script.js"></script>
+  </body>
+</html>
