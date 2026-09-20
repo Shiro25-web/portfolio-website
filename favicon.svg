@@ -1,0 +1,39 @@
+    <svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     fill="none">
+
+    <!-- Face -->
+    <circle
+        cx="32"
+        cy="32"
+        r="27"
+        stroke="#000"
+        stroke-width="4"
+    />
+
+    <!-- X eye -->
+    <path
+        d="M20 20 L28 28 M28 20 L20 28"
+        stroke="#000"
+        stroke-width="4"
+        stroke-linecap="round"
+    />
+
+    <!-- O eye -->
+    <circle
+        cx="44"
+        cy="24"
+        r="5"
+        stroke="#000"
+        stroke-width="4"
+    />
+
+    <!-- Smile -->
+    <path
+        d="M19 36 Q32 51 45 36"
+        stroke="#000"
+        stroke-width="4"
+        stroke-linecap="round"
+    />
+
+</svg>

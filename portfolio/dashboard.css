@@ -1,0 +1,32 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.75rem;
+  min-height: 15rem;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-content h3 {
+  margin: 0 0 1rem;
+}
+
+.card-content p {
+  margin: 0;
+}
+
+.card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+}

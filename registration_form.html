@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/register" method="post">
+      <fieldset>
+        <legend><h4>Registration Form</h4></legend>
+        <br />
+        <br />
+        <label for="Full Name">Full Name:</label>
+        <input type="text" id="Full Name" name="Full Name" required />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <span aria-hidden="true">*</span>
+        <br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br /><br />
+        <label for="account type"><b>Account Type:</b></label>
+        <select id="account type" name="account type" required>
+          <option value="individual">personal</option>
+          <option value="business">Business</option>
+        </select>
+        <br /><br />
+        <legend><b>Preferred contact method:</b></legend>
+        <input type="radio" name="contact" id="email" value="email" />
+        <label for="email">Email</label>
+        <input type="radio" name="contact" id="phone" value="phone" />
+        <label for="phone">Phone</label>
+        <br /><br />
+        <label for="message">Additional notes:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      </fieldset>
+      <br />
+      <br />
+      <button type="submit">Create Account</button>
+    </form>
+  </body>
+</html>

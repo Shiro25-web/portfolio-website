@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CONTACT FORM</h1>
+    <br />
+    <br />
+    <form action="/contact" method="post">
+      <fieldset aria-hidden="true">
+        <legend>YOUR DETAILS</legend>
+        <br />
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          autocomplete="name"
+          minlength="2"
+        />
+        <span aria-hidden="true">*</span>
+        <br />
+        <br />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          autocomplete="email"
+        />
+        <span aria-hidden="true">*</span>
+        <br />
+        <br />
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" required autocomplete="tel" />
+        <span aria-hidden="true">*</span>
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Your Message</legend>
+        <br />
+        <label for="Subject">subject</label>
+        <input
+          type="text"
+          name="Subject"
+          id="subject"
+          required
+          ,
+          maxlength="100"
+        />
+        <span aria-hidden="true">*</span>
+        <br />
+        <br />
+        <label for="message">message</label>
+        <textarea
+          name="message"
+          id="message"
+          rows="6"
+          required
+          ,
+          maxlength="1000"
+        >
+        </textarea>
+        <span aria-hidden="true">*</span>
+        <br />
+        <br />
+        <label for="checkbox">How did you hear about us?</label>
+        <br />
+        <input
+          type="checkbox"
+          name="about us"
+          id="instagram"
+          value="instagram"
+        />
+        <label for="instagram">instagram</label>
+        <br />
+        <input type="checkbox" name="about us" id="twitter" value="twitter" />
+        <label for="twitter">Twitter</label>
+        <br />
+        <input type="checkbox" name="about us" id="referral" value="referral" />
+        <label for="referral">Referral</label>
+      </fieldset>
+      <br />
+      <br />
+      <button type="submit">submit</button> <button type="reset">reset</button>
+      <br /><br />
+    </form>
+  </body>
+</html>

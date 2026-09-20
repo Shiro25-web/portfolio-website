@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Challenge</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        background: #f4f4f9;
+        height: 2000px;
+        padding-top: 60px;
+      }
+
+      /* TASK 1: Top Navigation Bar */
+      .navbar {
+        background: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      /* TASK 2: Card */
+      .card {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+        position: relative;
+      }
+
+      .badge {
+        background: #ff4757;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+
+      /* TASK 3: Sticky Sidebar */
+      .layout {
+        display: flex;
+        gap: 20px;
+      }
+
+      .main-content {
+        flex: 3;
+        background: white;
+        padding: 20px;
+        height: 800px;
+        border-radius: 8px;
+      }
+
+      .sidebar {
+        flex: 1;
+        background: #dfe4ea;
+        padding: 20px;
+        border-radius: 8px;
+        height: 200px;
+        position: sticky;
+        top: 80px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">STAY FIXED AT THE TOP</div>
+
+    <div class="container">
+      <!-- Task 2 -->
+      <div class="card">
+        <span class="badge">NEW</span>
+
+        <h2>Product Feature Card</h2>
+
+        <p>
+          This badge needs to live exactly 15px from the top edge and 15px from
+          the right edge of this white card wrapper.
+        </p>
+      </div>
+
+      <!-- Task 3 -->
+      <div class="layout">
+        <div class="main-content">
+          <h2>Main Article Content</h2>
+
+          <p>Scroll down to see if the sidebar stays tracking with you...</p>
+        </div>
+
+        <div class="sidebar">
+          <h3>Sticky Sidebar</h3>
+
+          <p>I should follow you down until the end of the article wrapper.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
